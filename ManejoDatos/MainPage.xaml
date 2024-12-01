@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ManejoDatos.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            
+            <Label
+                x:Name="label_id"
+                Text ="{Binding Id}"/>
+
+            <Editor
+                x:Name="editor_id"
+                Placeholder="Ingrese el ID"
+                AutoSize="TextChanges"
+                HeightRequest="30"/>
+
+            <Editor
+                x:Name="editor_nombre"
+                Placeholder="Ingrese el Nombre"
+                AutoSize="TextChanges"
+                HeightRequest="30"/>
+
+            <Editor
+                x:Name="editor_carrera"
+                Placeholder="Ingrese la Carrera"
+                AutoSize="TextChanges"
+                HeightRequest="30"/>
+
+            <Label
+                x:Name="label_nombre"
+                Text ="{Binding Nombre}"/>
+            
+            <Label
+                x:Name="label_carrera"
+                Text ="{Binding Carrera}"/>
+
+            <Button
+                x:Name="GuardarEstudiante"
+                Text ="Guardar Estudiante"
+                Clicked="GuardarEstudiante_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
