@@ -9,7 +9,7 @@ namespace ManejoDatos.Interfaces
 {
     public interface IEstudianteUDLARepository
     {
-        IEnumerable<EstudianteUDLA> DevuelveEstadoEstudiantes();
+        IEnumerable<EstudianteUDLA> DevuelveListadoEstudiantes();
         EstudianteUDLA DevuelveEstudianteUDLA(int id);
         bool CrearEstudianteUDLA(EstudianteUDLA estudiante);
         bool ActualizarEstudianteUDLA(EstudianteUDLA estudiante);

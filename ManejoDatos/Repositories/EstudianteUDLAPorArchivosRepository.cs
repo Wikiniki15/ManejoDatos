@@ -31,7 +31,7 @@ namespace ManejoDatos.Repositories
             }
         }
 
-        public IEnumerable<EstudianteUDLA> DevuelveEstadoEstudiantes()
+        public IEnumerable<EstudianteUDLA> DevuelveListadoEstudiantes()
         {
             throw new NotImplementedException();
         }

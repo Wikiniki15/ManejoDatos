@@ -1,4 +1,4 @@
-﻿using Android.Locations;
+﻿//using Android.Locations;
 using System;
 using System.Collections.Generic;
 using System.Linq;

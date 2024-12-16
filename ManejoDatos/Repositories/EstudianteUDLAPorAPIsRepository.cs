@@ -22,7 +22,7 @@ namespace ManejoDatos.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<EstudianteUDLA> DevuelveEstadoEstudiantes()
+        public IEnumerable<EstudianteUDLA> DevuelveListadoEstudiantes()
         {
             using (HttpClient httpClient = new HttpClient())
             {
@@ -31,6 +31,7 @@ namespace ManejoDatos.Repositories
                 List<EstudianteAPI> estudiantesAPI = JsonConvert.DeserializeObject<List<EstudianteAPI>>(json_data);
 
             }
+            throw new NotImplementedException();
         }
 
         public EstudianteUDLA DevuelveEstudianteUDLA(int id)
